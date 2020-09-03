@@ -1,14 +1,20 @@
 
 
 
+var loader = document.querySelector(".loader")
 
-window.addEventListener("load", function () {
-  document.querySelector(".preloader").classList.add("opacity-0");
+window.addEventListener("load", vanish);
 
-  setTimeout(function () {
-    document.querySelector(".preloader").style.display = "none";
-  }, 1000);
-});
+function vanish() {
+  loader.classList.add("disppear");
+}
+// window.addEventListener("load", function () {
+//   document.querySelector(".preloader").classList.add("opacity-0");
+
+//   setTimeout(function () {
+//     document.querySelector(".preloader").style.display = "none";
+//   }, 1000);
+// });
 
 
 //Portfolio item Filter

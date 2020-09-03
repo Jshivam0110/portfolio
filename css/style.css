@@ -180,7 +180,7 @@ select {
 
 /* preloader */
 
-.preloader {
+/* .preloader {
   background-color: #222222;
   position: fixed;
   left: 0;
@@ -235,9 +235,46 @@ select {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+} */
+
+
+.loader{
+  background-color: #222222;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 150;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.disppear{
+  -webkit-animation: vanish 1s forwards;
+  animation: vanish 1s forwards;
+}
+
+@-webkit-keyframes vanish {
+  100%{
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 
+@keyframes vanish {
+  100%{
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 
 
 /* Aside */
