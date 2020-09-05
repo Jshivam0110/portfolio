@@ -2,11 +2,12 @@
 
 
 var loader = document.querySelector(".loader")
+var loaderMsg=document.querySelector(".loader-message")
 
 window.addEventListener("load", vanish);
-
 function vanish() {
   loader.classList.add("disppear");
+  loaderMsg.classList.add("disppear");
 }
 
 
